@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'viajes365-frontend';
+
+  logout(): void {
+    // ToDo
+    // this.accountService.logout();
+  }
 }

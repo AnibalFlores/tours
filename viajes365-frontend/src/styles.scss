@@ -1,1 +1,176 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+
+// Main Theme pallete
+$first-color: #207520;
+$second-color: rgba(255, 217, 50, 0.966);
+
+@import 'assets/fonts/fonts';
+
+body {
+  background: rgb(90, 90, 90);
+  font-family: Montserrat;
+}
+
+a {
+  color: aqua;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+.navbar-custom {
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.45) 99%, rgba(255, 255, 255, 0.4) 1%), url(./assets/images/tile_pattern.jpg);
+  padding-bottom: 2px;
+}
+
+
+// Logo y marca
+.navbar-custom .navbar-brand {
+  color: $second-color;
+  font-family: TitilliumWeb Bold;
+}
+
+.navbar-custom .navbar-text {
+  color: rgba(255, 255, 255, .8);
+}
+
+// link color
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .5);
+}
+
+// hovered links color
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: $second-color;
+}
+
+.custom-toggler {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+// hide custom toggler
+@media (min-width: 992px) {
+  .custom-toggler {
+    display: none;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.title-custom {
+  color: $second-color;
+  font-family: TitilliumWeb Bold;
+}
+
+.cardtitle-custom {
+  font-family: TitilliumWeb Bold;
+}
+
+footer {
+  text-align: center;
+  color: rgb(183, 183, 183);
+  margin-top: 1%;
+}
+
+.header-content {
+  padding: 80px 0 200px 0;
+}
+
+// background animation
+@keyframes zoomin {
+  0% {
+    -webkit-background-size: 100%;
+  }
+
+  100% {
+    -webkit-background-size: 120%;
+  }
+}
+
+.content {
+  border-radius: 8px;
+  margin-top: -80px;
+  background: #fff;
+  box-shadow: 0 0 25px -6px rgba(0, 0, 0, 0.9);
+}
+
+.content .left {
+  border-radius: 8px;
+  padding-top: 20px;
+}
+
+.content .right {
+  border-radius: 0px 8px 0px 0px;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .content .right {
+    border-radius: 0px 0px 0px 0px;
+    padding: 0;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.content .bottom {
+  border-radius: 0px 0px 8px 8px;
+  background: $first-color;
+  padding: 20px;
+}
+
+.primary-color {
+  color: $first-color;
+}
+
+.navbar-logo {
+  width: 2.0rem;
+  height: 2.0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 0.5rem;
+  margin-left: 0.01rem;
+
+}
+
+// filter builder https://codepen.io/sosuke/pen/Pjoqqp
+
+.filter-logo {
+  // filter: invert(16%) sepia(98%) saturate(7191%) hue-rotate(118deg) brightness(93%) contrast(75%);
+  transition: 300ms linear;
+}
+
+.filter-logo:hover {
+  transform: rotate(360deg);
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(100%) contrast(119%);
+}
+
+.btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn {
+  margin-bottom: 10px;
+}

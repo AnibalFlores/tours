@@ -1,0 +1,170 @@
+  @font-face {
+    font-family: 'TitilliumWeb Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('TitilliumWeb-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Titillium Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Light'), url('TitilliumWeb-Light.ttf') format('ttf');
+  }
+
+
+  @font-face {
+    font-family: 'Titillium Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Light Italic'), url('TitilliumWeb-LightItalic.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'Titillium Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Semibold'), url('TitilliumWeb-Semibold.ttf') format('ttf');
+  }
+
+
+  @font-face {
+    font-family: 'Titillium Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Semibold Italic'), url('TitilliumWeb-SemiboldItalic.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'TitilliumWeb Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('TitilliumWeb-Bold.ttf');
+  }
+
+
+  @font-face {
+    font-family: 'Titillium Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium Bold Italic'), url('TitilliumWeb-BoldItalic.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'Titillium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Titillium'), url('TitilliumWeb-Black.ttf') format('ttf');
+  }
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-Light.ttf');
+      font-display: swap;
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-Light.ttf');
+      font-display: swap;
+      font-weight: 300;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-Regular.ttf');
+      font-display: swap;
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-RegularItalic.ttf');
+      font-display: swap;
+      font-weight: 400;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-SemiBold.ttf');
+      font-display: swap;
+      font-weight: 600;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-SemiBoldItalic.ttf');
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+  @font-face {
+      font-family: Montserrat;
+      src: url('Montserrat-Bold.ttf');
+      font-display: swap;
+      font-weight: 700;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-BoldItalic.ttf');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+  @mixin fontLight($size: false, $colour: false, $lh: false, $ls: false) {
+    font-family: Muli-Light;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+  }
+
+
+  @mixin fontRegular($size: false, $colour: false,  $lh: false, $ls: false) {
+    font-family: Muli-Regular;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+  }
+
+  @mixin fontMedium($size: false, $colour: false,  $lh: false, $ls: false) {
+    font-family: Muli-Medium;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+      font-weight: 500 !important;
+  }
+
+  @mixin fontSemiBold($size: false, $colour: false,  $lh: false, $ls: false) {
+    font-family: Muli-SemiBold;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+      font-weight: 500 !important;
+  }
+
+  @mixin fontBold($size: false, $colour: false,  $lh: false, $ls: false) {
+    font-family: Muli-Bold;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+  }
+
+  @mixin fontExtraBold($size: false, $colour: false,  $lh: false, $ls: false) {
+    font-family: Muli-ExtraBold;
+      @if $size { font-size: $size; }
+      @if $colour { color: $colour; }
+      @if $lh { line-height: $lh; }
+      @if $ls { letter-spacing: $ls; }
+  }
