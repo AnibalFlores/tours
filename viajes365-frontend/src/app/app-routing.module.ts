@@ -6,9 +6,10 @@ const accountModule = () => import('./account/account.module').then(x => x.Accou
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'login', redirectTo: 'account/login', pathMatch: 'full' },
+
+  { path: 'register', redirectTo: 'account/register', pathMatch: 'full' },
   { path: 'account', loadChildren: accountModule, pathMatch: 'prefix' },
-  // otherwise redirect to home
+  // cualquier otra cosa va a home
   { path: '**', redirectTo: '' }
 ];
 

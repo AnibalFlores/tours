@@ -1,0 +1,103 @@
+<div class="p-4">
+  <div class="container">
+    <div class="col-md-6 offset-md-3 mt-5">
+      <div class="card"
+        style="background-color: rgba(255, 255, 255, 0.4); box-shadow: 0 0 25px -6px rgba(0, 0, 0, 0.9);">
+        <h4 class="card-header cardtitle-custom"><i class="bi-person-plus-fill"
+            style="color: black; margin-right: 8px;"></i>Registro
+        </h4>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" formControlName="firstName" class="form-control" id="firstName" placeholder="Nombres"
+                  [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                <label for="firstName">Nombres *</label>
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                  <div *ngIf="f.firstName.errors.required">Al menos un Nombre es obligatorio</div>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" formControlName="lastName" class="form-control" id="lastName" placeholder="Apellidos"
+                  [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <label for="lastName">Apellidos *</label>
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                  <div *ngIf="f.lastName.errors.required">Al menos un Apellido es obligatorio</div>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" formControlName="username" class="form-control" id="username" placeholder="usuario"
+                  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                <label for="username">Nombre de Usuario *</label>
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                  <div *ngIf="f.username.errors.required">Nombre de Usuario es obligatorio</div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="form-floating">
+                <label for="email">Email *</label>
+                <input type="text" formControlName="email" class="form-control" id="email" placeholder="email"
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">El email es obligatorio</div>
+                  <div *ngIf="f.email.errors.email">El email deber ser una dirección válida</div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-group col">
+                <div class="form-floating">
+                  <input type="password" formControlName="password" class="form-control" id="password"
+                    placeholder="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                  <label for="password">Contraseña *</label>
+                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">La contraseña es obligatoria</div>
+                    <div *ngIf="f.password.errors.minlength">La contraseña de tener al menos 5
+                      caracteres</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col">
+                <div class="form-floating">
+
+                  <input type="password" formControlName="confirmPassword" class="form-control" id="confirmPassword"
+                    placeholder="confirmpassword" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                  <label for="confirmPassword">Confirmar Contraseña *</label>
+                  <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                    <div *ngIf="f.confirmPassword.errors.required">La confirmación de contraseña es
+                      obligatoria
+                    </div>
+                    <div *ngIf="f.confirmPassword.errors.mustMatch">Las contraseñas deben coincidir
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <hr>
+            <div class="form-group" style="float: right;">
+              <button [disabled]="loading" class="btn btn-primary me-2">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                <i class="bi-pencil-square" style="color: white; margin-right: 8px;"></i>Registrar
+              </button>
+              <button class="btn btn-secondary" routerLink="../home">
+                <i class="bi-x" style="color: white; margin-right: 8px;"></i>Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
