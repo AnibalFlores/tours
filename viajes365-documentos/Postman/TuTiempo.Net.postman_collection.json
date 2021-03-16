@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "fa6b8e86-242e-402c-8f1e-2ff19edba610",
+		"name": "TuTiempo.Net",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clima Paraná",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=43214",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "43214"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima Federación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=42987",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "42987"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima Concordia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=42923",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "42923"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima Gualeguaychú",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=43034",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "43034"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima Gualeguay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=43033",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "43033"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima Colón",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tutiempo.net/json/?lan=es&lid=43437",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tutiempo",
+						"net"
+					],
+					"path": [
+						"json",
+						""
+					],
+					"query": [
+						{
+							"key": "lan",
+							"value": "es"
+						},
+						{
+							"key": "lid",
+							"value": "43437"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "XsGaqqXXXzXeobw",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "apid",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
