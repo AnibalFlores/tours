@@ -1,18 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Viajes365RestApi.Entities;
+using Viajes365RestApi.Extensions;
 using Viajes365RestApi.Helpers;
 
 namespace Viajes365RestApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
+    [Authorization(adminrole)]
+    [Route("api/[controller]")]
     public class RolesController : ControllerBase
     {
         private readonly DataContext _context;
+        const string adminrole = "Administrador";
 
         public RolesController(DataContext context)
         {
